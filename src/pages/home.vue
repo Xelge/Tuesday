@@ -15,24 +15,60 @@
           </marquee>
       <q-page-container>
         <q-page>
-          <div class="who">
+          <div class="who q-py-lg">
             <div class="q-py-lg text-h4 flex justify-center"> КТО МЫ?</div>
             <div class="description text-h6 q-pt-lg">
-              <span class="text-purple-7 youngzterz">Youngzterz</span> – это сервис, созданный для продвижения<br> уличных брендов
-              молодёжной одежды<br> Санкт-Петербурга.
+              <span class="text-purple-7 youngzterz">Youngzterz</span> – это сервис, созданный для продвижения уличных<br> брендов
+              молодёжной одежды Санкт-Петербурга.
             </div>
           </div>
-          <div class="brands">
+          <div class="who q-py-lg">
             <div class="q-py-lg text-h4 flex justify-center"> НАШИ БРЕНДЫ</div>
           </div>
+          <div class="q-pa-md">
+            <q-carousel
+              arrows
+              animated
+              v-model="slide"
+              height="300px"
+            >
+              <q-carousel-slide name="first" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
+                <div class="absolute-bottom custom-caption">
+                  <div class="text-h4">First brand</div>
+                  <div class="text-subtitle1">Mountains</div>
+                </div>
+              </q-carousel-slide>
+            </q-carousel>
+          </div>
         </q-page>
+        <q-page-container>
+          <q-page class="q-pt-lg">
+            <div class="who">
+              <div class="q-py-lg text-h4 flex justify-center"> #GOSUPPORT</div>
+              <div class="description text-h6 q-pt-lg">
+                <span class="text-purple-7 youngzterz">#GOSUPPORT</span>  – это раздел, в котором представлены
+                идеи<br> будущих брендов. Здесь вы можете приблизить какой-либо<br> локальный бренд к появлению на свет.
+              </div>
+            </div>
+            <div class="flex justify-center q-py-lg">
+            <q-btn class="btn q-my-lg q-mx-lg" outline color="white" label="ПЕРЕЙТИ В РАЗДЕЛ" /></div>
+          </q-page>
+        </q-page-container>
+          <marquee behavior="alternate">YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ
+            YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ
+          </marquee>
       </q-page-container>
     </q-layout>
   </div>
 </template>
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data () {
+    return {
+      slide: 'first'
+    }
+  }
 }
 </script>
 
@@ -78,6 +114,14 @@ export default {
     font-size: 30px;
     color: white;
   }
+  .btn {
+    font-family: Prosto One;
+    font-size: 24px;
+    display: flex;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+  }
+
   #sup {
     font-style: normal;
     letter-spacing: 0.3em;
@@ -107,5 +151,11 @@ export default {
   }
   .youngzterz {
     font-style: italic;
+  }
+  .custom-caption {
+    text-align: center;
+    padding: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
   }
 </style>
