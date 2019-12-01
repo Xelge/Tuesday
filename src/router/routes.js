@@ -21,8 +21,8 @@ const routes = [
         component: () => import('pages/sponsorship.vue')
       },
       {
-        path: 'brands',
-        component: () => import('pages/brands.vue')
+        path: 'form',
+        component: () => import('pages/form.vue')
       }
     ]
   },
@@ -33,6 +33,10 @@ const routes = [
   {
     path: '/login',
     component: () => import('pages/login.vue')
+  },
+  {
+    path: '/brand_about',
+    component: () => import('pages/brand_about.vue')
   }
 ]
 
