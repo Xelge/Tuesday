@@ -5,11 +5,11 @@
         <router-link to="/">
           <button class="text-subtitle1 q-px-xl">ГЛАВНАЯ</button>
         </router-link>
-        <router-link to="/brands">
-          <button class="text-subtitle1 q-px-xl">БРЕНДЫ</button>
-        </router-link>
         <router-link to="/sponsorship">
           <button class="text-subtitle1 q-px-xl">СПОНСИРОВАНИЕ</button>
+        </router-link>
+        <router-link to="/form">
+          <button class="text-subtitle1 q-px-xl">ОТПРАВИТЬ ЗАЯВКУ</button>
         </router-link>
       </q-toolbar>
     </q-header>
