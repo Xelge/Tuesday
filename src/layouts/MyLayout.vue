@@ -2,6 +2,9 @@
   <q-layout view="hHh lpR fff">
     <q-header reveal class="bg-dark text-white headd">
       <q-toolbar class="q-pa-none row  justify-center">
+        <router-link to="/">
+          <button class="text-subtitle1 q-px-xl">ГЛАВНАЯ</button>
+        </router-link>
         <router-link to="/brands">
           <button class="text-subtitle1 q-px-xl">БРЕНДЫ</button>
         </router-link>
