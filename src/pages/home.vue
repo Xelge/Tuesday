@@ -51,7 +51,10 @@
               </div>
             </div>
             <div class="flex justify-center q-py-lg">
-            <q-btn class="btn q-my-lg q-mx-lg" outline color="white" label="ПЕРЕЙТИ В РАЗДЕЛ" /></div>
+              <router-link to="/sponsorship">
+              <q-btn class="btn q-my-lg q-mx-lg" outline color="white" label="ПЕРЕЙТИ В РАЗДЕЛ" />
+              </router-link>
+            </div>
           </q-page>
         </q-page-container>
           <marquee behavior="alternate">YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ YOUNGZTERZ
@@ -120,6 +123,10 @@ export default {
     display: flex;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  }
+  a {
+    text-decoration: none;
   }
 
   #sup {
