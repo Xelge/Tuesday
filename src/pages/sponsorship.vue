@@ -36,7 +36,7 @@
       <div class="text-h3 q-pb-lg start-head">СОЗДАЙ СВОЙ БРЕНД</div>
       <div class="start-description">Тоже хочешь создать свой бренд? Мы поможем найти<br>
         спонсоров для реализации твоей идеи! Отправляй заявку и, возможно, именно твой бренд увидит свет с помощью нашей команды.</div>
-      <router-link to="/" class="justify-center row">
+      <router-link to="/form" class="justify-center row">
         <q-btn class="btn q-my-lg q-mx-lg" outline color="white" label="ОФОРМИТЬ ЗАЯВКУ" />
       </router-link>
     </div>
