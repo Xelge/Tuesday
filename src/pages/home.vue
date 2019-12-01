@@ -3,10 +3,10 @@
     <q-layout>
       <q-page-container>
         <q-page>
-           <div class="gif flex justify-center">
-               <span class="head" id="go">GO</span>
-               <span id="header1" class="head">YOUNGZTERZ <span class="head" id="header2">YOUNGZTERZ</span></span>
-               <span class="head" id="sup">SUPPORT</span>
+           <div class="gif row justify-center">
+               <span class="head col-12" id="go">GO</span>
+               <span id="header1" class="head col-12">YOUNGZTERZ <span class="head" id="header2">YOUNGZTERZ</span></span>
+               <span class="head col-12" id="sup">SUPPORT</span>
            </div>
         </q-page>
       </q-page-container>
@@ -106,7 +106,7 @@ export default {
   }
   #header2 {
     font-weight: lighter;
-    margin-left: -50.5%;
+    margin-left: -45%;
     -webkit-text-stroke: 1px white;
     color: rgba(13,123,123, 0);
   }
@@ -118,10 +118,9 @@ export default {
     color: white;
   }
   .btn {
+    margin-top: 20%;
     font-family: Prosto One;
     font-size: 24px;
-    display: flex;
-    border: 2px solid #FFFFFF;
     border-radius: 10px;
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
   }
@@ -147,7 +146,7 @@ export default {
     font-size: 36px;
     font-family: Prosto One;
     color: white;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   q-page {
     background: black;
