@@ -30,12 +30,18 @@
               arrows
               animated
               v-model="slide"
-              height="300px"
+              height="500px"
             >
-              <q-carousel-slide name="first" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
+              <q-carousel-slide name="first" img-src="https://sun9-46.userapi.com/c836625/v836625011/60622/oqBlBKHsrGY.jpg">
                 <div class="absolute-bottom custom-caption">
                   <div class="text-h4">First brand</div>
-                  <div class="text-subtitle1">Mountains</div>
+                  <div class="text-subtitle1">MORE</div>
+                </div>
+              </q-carousel-slide>
+              <q-carousel-slide name="second" img-src="https://sun9-61.userapi.com/c857016/v857016405/70204/jVe4UweOsNQ.jpg">
+                <div class="absolute-bottom custom-caption">
+                  <div class="text-h4">Second brand</div>
+                  <div class="text-subtitle1">LETO</div>
                 </div>
               </q-carousel-slide>
             </q-carousel>
